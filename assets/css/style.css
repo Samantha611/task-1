@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-image: url('flower_haven_background.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.banner {
+  background-color: #ffe76c;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.banner h1 {
+  color: #ff8080;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #fa6c6c;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.nav-button {
+  color: #ffe45c;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* About Us Section */
+.about-us {
+  padding: 20px;
+  background-color: #ffe76c;
+  color: #ff8080;
+}
+
+.about-title {
+  color: #fa6c6c;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.about-content p {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.image-placeholder {
+  flex: 1;
+  height: 200px;
+  background-color: #f79595;
+  border: 1px dashed #eb4a4a;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-content p {
+    padding-right: 0;
+    margin-bottom: 10px; /* Reduced gap to 10px */
+  }
+
+  .image-placeholder {
+    width: 100%;
+  }
+}
+
+/* For smaller screens (phones) */
+@media (max-width: 300px) {
+  .banner {
+    padding: 15px 0;
+  }
+
+  .banner h1 {
+    font-size: 1em; 
+  }
+
+  .nav-button {
+    padding: 8px 15px; 
+    margin: 5px; 
+    font-size: 0.9em; 
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .banner {
+    padding: 10px 0;
+  }
+
+  .banner h1 {
+    font-size: 2em; 
+  }
+
+  .nav-button {
+    padding: 9px 18px; 
+    margin: 8px; 
+  }
+}
